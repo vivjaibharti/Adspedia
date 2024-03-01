@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+{%load static %}
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- {% block title %} -->
+    <title>Home</title>
+    <!-- {% endblock %} -->
+
+    <!-- {% block css %} -->
+
+    <!-- <link rel="stylesheet" href="/Adspedia/userapp/static/css/index/index.css"> -->
+    <link rel="stylesheet" href="{%static 'css/index/index.css'%}">
+
+    <!-- <link rel="shortcut icon" href="/Adspedia/userapp/static/media/adspedia-favicon-white.png" type="image/x-icon"> -->
+    <link rel="shortcut icon" href="{% static 'media/adspedia-favicon-white.png'%}" type="image/x-icon">
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <!-- {% endblock%} -->
+
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo-container">
+            <i class="ri-menu-line" style="padding-right: 10px;"></i>
+            <div class="logo">
+                <div class="logo-img">
+                    <img src="{% static 'media/adspedia-high-resolution-logo-transparent.png'%} " alt="">
+                </div>
+            </div>
+
+        </div>
+        <div class="search-container">
+            <form action="">
+                <!--here insert csrf template tag-->
+                <input type="text" name="" id="" placeholder="Search Product">
+            </form>
+            <button class="search"><i class="ri-search-line"></i></button>
+        </div>
+        <div class="profile-container">
+            <i class="ri-video-add-line"></i>
+            <i class="ri-notification-4-line"></i>
+            <div class="profile-box">
+                <img src="/Adspedia/userapp/static/media/Vivek_Logo.jpg" alt=""><!--fetch through db-->
+            </div>
+        </div>
+    </div>
+    <div class="body-container">
+        <div class="sidebar">
+            <div class="sidebar-items">
+                <a href="#" class="sidebar-item"><i class="ri-home-5-line">Home</i></a>
+                <a href="#" class="sidebar-item"><i class="ri-compass-3-line">Explore</i></a>
+                <hr>
+                <h3>You</h3>
+                <a href="#" class="sidebar-item"><i class="ri-video-line">Your Channel</i></a>
+                <a href="#" class="sidebar-item"><i class="ri-government-line">Your Business A/c</i></a>
+                <a href="#" class="sidebar-item"><i class="ri-heart-line">Wishlist</i></a>
+                <a href="#" class="sidebar-item"><i class="ri-time-line">Watch Later</i></a>
+                <a href="#" class="sidebar-item"><i class="ri-thumb-up-line">Likes</i></a>
+                <a href="#" class="sidebar-item"><i class="ri-play-list-2-line">Playlist</i></a>
+                <hr>
+                <h3>Subscribed</h3>
+            </div>
+        </div>
+        <div class="content">
+            <div class="chips-wrapper">
+
+            </div>
+            <div class="video-container">
+                
+            </div>
+        </div>
+    </div>
+    <!-- {% block custom_js%} -->
+    <!-- <script src="{% static 'js/index/index.js' %}"></script> -->
+    <!-- {%endblock%} -->
+</body>
+
+</html>
